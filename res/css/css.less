@@ -1,0 +1,260 @@
+out: css.css
+
+//variables
+@dark : #628784;
+@light : #E1F4F3;
+@headerFont : 'Raleway', sans-serif;
+@bodyFont : 'Open Sans', sans-serif;
+@rightImage : url("../img/bright-squares.png");
+@leftImage : url("../img/arches.png");
+@footerImage : url("../img/back-pattern.png");
+
+// @dark : #2B2B33;
+// @light : #878796;
+// @dark : #0B5E55;
+// @light : #EFFEC7;
+
+*{
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+html,body, document{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  background: black;
+  font-family: @bodyFont;
+}
+
+p{
+  line-height: 1.8em;
+  font-size: 20px;
+}
+
+footer{
+  border-top: 1px solid rgba(0,0,0,0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.9);
+  background-image: @footerImage;
+  text-align: right;
+  z-index: 1;
+}
+
+footer h3{
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0.2em;
+  padding-right: 1em;
+
+}
+
+#container{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+#left{
+  display: block;
+  flex-direction: column;
+  margin: 0;
+  color: @light;
+  z-index: 3;
+  background: @dark;
+  background-image: @leftImage;
+
+}
+
+#left a{
+  text-decoration: none;
+  color: @light;
+}
+
+#left h3{
+  margin: 0;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+#left h3:hover{
+  box-shadow: inset 0 -30px 10px -7px rgba(205,255,225,0.1), inset 0px -10px 0px -5px @light;
+}
+
+#right{
+  width: 100%;
+  min-height: ~"calc(100% - 60px)";
+  background: @light;
+  margin: 0;
+  z-index: 1;
+  color: @dark;
+  background-image: @rightImage;
+}
+
+h1, h2, h3, h4, h5{
+  padding-left: 10px;
+  font-family: @headerFont;
+  font-weight:normal;
+  border-bottom: 3px solid @light;
+}
+
+#left h2, #left h3, #left h4, #left h5{
+  padding-bottom: 5px;
+}
+
+h1{
+  margin-top:0;
+  font-size: 4em;
+  border-bottom: 10px solid @light;
+}
+
+.content{
+
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+}
+
+.content li{
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 0;
+}
+.content li p{
+  color: rgba(255,255,255,0);
+  position: absolute;
+  bottom: 0;
+}
+
+.content li h2{
+  border: 0;
+  background: rgba(255,255,255,0.7);
+  margin: 0;
+  padding: 15px;
+}
+
+.picture-box{
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-links{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  background: rgba(255,255,255,0.7);
+}
+
+.project-links li{
+  margin: 0;
+  padding:15px;
+  width: 50%;
+}
+
+.project-links a{
+  display:inline-block;
+  width: 100%;
+}
+
+.project-links li:nth-of-type(even){
+  text-align: right;
+}
+
+.project-links li:hover{
+  background: rgba(200,200,200, 0.7);
+}
+
+
+
+.content ul li:hover p{
+  display: flex;
+  box-shadow: inset 0 -150px 100px -15px rgba(0,0,0,0.6);
+  color: rgba(255,255,255,1);
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  padding: 15px;
+  align-items: flex-end;
+
+}
+
+#right h1 {
+  border-bottom: 10px solid @dark;
+}
+
+h1 .active, h2 .active, h3 .active, h4 .active, h5 .active{
+  border-bottom: 4px solid @light;
+}
+
+.float-left{
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 0;
+  float:left;
+
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+  clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+}
+
+.project-entry{
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+  clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+}
+
+.block-left{
+  max-width: 1280px;
+}
+
+
+@media screen and (min-width: 1024px){
+
+  p{
+    line-height: 1.8em;
+    font-size: 17px;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  h1{
+    margin-top: auto;
+    font-size: 3.5em;
+  }
+
+  #container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #left{
+    width: 425px;
+    height: 100%;
+    position: fixed;
+    clip-path: polygon(0 0, 100% 0, 65% 85%, 0% 100%);
+  }
+
+  .content{
+    padding: 0;
+    float: right;
+    height: 100%;
+
+    width: ~"calc(100% - 350px)";
+  }
+
+  .content > *{
+    padding-left: 100px;
+  }
+
+}
