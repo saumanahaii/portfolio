@@ -46,14 +46,14 @@ footer h3 {
   display: block;
   flex-direction: column;
   margin: 0;
-  color: #E1F4F3;
+  color: #faffff;
   z-index: 3;
-  background: #628784;
+  background: #587d7a;
   background-image: url("../img/arches.png");
 }
 #left a {
   text-decoration: none;
-  color: #E1F4F3;
+  color: #faffff;
 }
 #left h3 {
   margin: 0;
@@ -61,15 +61,15 @@ footer h3 {
   padding-bottom: 0;
 }
 #left h3:hover {
-  box-shadow: inset 0 -30px 10px -7px rgba(205, 255, 225, 0.1), inset 0px -10px 0px -5px #E1F4F3;
+  box-shadow: inset 0 -30px 10px -7px rgba(205, 255, 225, 0.1), inset 0px -10px 0px -5px #faffff;
 }
 #right {
   width: 100%;
   min-height: calc(100% - 60px);
-  background: #E1F4F3;
+  background: #faffff;
   margin: 0;
   z-index: 1;
-  color: #628784;
+  color: #587d7a;
   background-image: url("../img/bright-squares.png");
 }
 h1,
@@ -80,7 +80,7 @@ h5 {
   padding-left: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-  border-bottom: 3px solid #E1F4F3;
+  border-bottom: 3px solid #faffff;
 }
 #left h2,
 #left h3,
@@ -91,7 +91,7 @@ h5 {
 h1 {
   margin-top: 0;
   font-size: 4em;
-  border-bottom: 10px solid #E1F4F3;
+  border-bottom: 10px solid #faffff;
 }
 .content {
   height: 100%;
@@ -154,14 +154,14 @@ h1 {
   align-items: flex-end;
 }
 #right h1 {
-  border-bottom: 10px solid #628784;
+  border-bottom: 10px solid #587d7a;
 }
 h1 .active,
 h2 .active,
 h3 .active,
 h4 .active,
 h5 .active {
-  border-bottom: 4px solid #E1F4F3;
+  border-bottom: 4px solid #faffff;
 }
 .float-left {
   margin: 20px;
