@@ -178,7 +178,7 @@ h5 .active {
 .block-left {
   max-width: 1280px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1050px) {
   p {
     line-height: 1.8em;
     font-size: 17px;
