@@ -48,7 +48,7 @@ footer h3 {
   margin: 0;
   color: #faffff;
   z-index: 3;
-  background: #587d7a;
+  background: #628784;
   background-image: url("../img/arches.png");
 }
 #left a {
@@ -69,7 +69,7 @@ footer h3 {
   background: #faffff;
   margin: 0;
   z-index: 1;
-  color: #587d7a;
+  color: #628784;
   background-image: url("../img/bright-squares.png");
 }
 h1,
@@ -81,6 +81,9 @@ h5 {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   border-bottom: 3px solid #faffff;
+}
+ul {
+  margin-bottom: 2em;
 }
 #left h2,
 #left h3,
@@ -115,6 +118,7 @@ h1 {
   background: rgba(255, 255, 255, 0.7);
   margin: 0;
   padding: 15px;
+  font-size: 1em;
 }
 .picture-box {
   position: relative;
@@ -154,7 +158,7 @@ h1 {
   align-items: flex-end;
 }
 #right h1 {
-  border-bottom: 10px solid #587d7a;
+  border-bottom: 10px solid #628784;
 }
 h1 .active,
 h2 .active,
