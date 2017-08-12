@@ -5,6 +5,9 @@
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
+a {
+  color: #628784;
+}
 html,
 body,
 document {
