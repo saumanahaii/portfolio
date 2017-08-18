@@ -13,6 +13,8 @@ if (hash === "" || hash === "#about") {
   $("#gamedev").removeClass("hidden");
 } else if (hash === "#misc") {
   $("#misc").removeClass("hidden");
+}else if (hash === "#contact") {
+  $("#contact").removeClass("hidden");
 }
 
 $(".menu-link").click(((event) => {
