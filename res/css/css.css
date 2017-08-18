@@ -108,7 +108,7 @@ h1 {
 .content li {
   position: relative;
   display: inline-block;
-  margin: 1em;
+  margin: 0.8em;
   padding: 0;
 }
 .content li p {
@@ -188,7 +188,7 @@ h5 .active {
 #contact {
   padding-bottom: 50px;
 }
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1230px) {
   p {
     line-height: 1.8em;
     font-size: 17px;
