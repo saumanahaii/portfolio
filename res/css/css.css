@@ -185,7 +185,10 @@ h5 .active {
 .block-left {
   max-width: 1280px;
 }
-@media screen and (min-width: 1230px) {
+#contact {
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1250px) {
   p {
     line-height: 1.8em;
     font-size: 17px;
