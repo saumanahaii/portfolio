@@ -15,6 +15,8 @@ if (hash === "" || hash === "#about") {
   $("#misc").removeClass("hidden");
 }else if (hash === "#contact") {
   $("#contact").removeClass("hidden");
+}else if (hash === "#writing") {
+  $("#writing").removeClass("hidden");
 }
 
 $(".menu-link").click(((event) => {
